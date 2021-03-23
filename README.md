@@ -28,4 +28,4 @@ python2 train_mlp.py ./resnet-18/ 512 labels/train_split.csv labels/val_split.cs
 
 3.Getting labels for Test set
 
-python2  test_mlp.py resnet-18/ 512 labels/test_for_student.label models/resnet.mlp.model resnet_meanp.testresults.csv
+python2  test_mlp.py resnet-50/ 2048 labels/test_for_student.label models/resnet.mlp.model resnet_meanp.testresults.csv
