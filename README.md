@@ -19,10 +19,13 @@ python get_vladfeat.py surf.10.n.kmeans.150.model surf_feat 150 videos.name.lst 
 ####################
 
 1.CNN feature extraction : 
+
 sudo python cnn_feat_extraction.py videos resnet-18/
 
 2.Training an MLP 
+
 python2 train_mlp.py ./resnet-18/ 512 labels/train_split.csv labels/val_split.csv models/resnet.mlp.model
 
 3.Getting labels for Test set
+
 python2  test_mlp.py resnet-18/ 512 labels/test_for_student.label models/resnet.mlp.model resnet_meanp.testresults.csv
